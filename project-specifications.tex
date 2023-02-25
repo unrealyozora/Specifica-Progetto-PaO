@@ -33,11 +33,13 @@ Lo scopo del progetto è lo sviluppo in C++ di un'applicazione a tema libero sog
 
 La GUI può liberamente trarre ispirazione sia da applicazioni per sistemi desktop che app per sistemi mobile. Si potrà aderire ai \emph{design pattern} \emph{Model-View-Controller} o \emph{Model-View} per la progettazione architetturale della GUI. Qt include un insieme di classi \emph{view} che usano una architettura \emph{Model/View} per gestire la relazione tra i dati logici della GUI ed il modo in cui essi sono presentati all'utente della GUI. Il framework Qt è dotato di una documentazione completa e precisa che sarà la principale guida di riferimento nello sviluppo della GUI, oltre ad offrire l'IDE QtCreator ed il tool QtDesigner. L'applicazione potrà anche applicare \emph{design pattern} comunemente utilizzati in C++.
 
-I voti relativi alla prova scritto e al progetto sono tra loro indipendenti, è possibile svolgere ciascuna delle due senza aver svolto l'altra e riconsegnare il progetto mantenendo il voto della prova scritta (e viceversa). La valutazione del progetto con relativo feedback avverrà solamente dopo aver superato l'esame scritto.
+I voti relativi alla prova scritta e al progetto sono tra loro indipendenti e il voto finale sarà calcolato come la loro media pesata. È possibile riconsegnare il progetto mantenendo il voto della prova scritta (e viceversa). È possibile sostenere la prova scritta senza aver consegnato il progetto e viceversa, tuttavia la valutazione di quest'ultimo con relativo feedback avverrà solamente dopo aver superato l'esame scritto. Affinché un progetto possa essere valuto valutato deve essere consegnato durante la finestra relativa alla sessione in cui si intende verbalizzare il voto; questa regola si applica anche a progetti già valutati e senza modifiche (in questo caso riconsegnare una copia del progetto precedentemente consegnato).
 
 %-----------------------------------------------------------------------
 \section{Roadmap}
-\includegraphics[width=1\textwidth]{assets/roadmap}
+\begin{center}
+ \includegraphics[width=0.85\textwidth]{assets/roadmap}
+\end{center}
 
 %-----------------------------------------------------------------------
 \section{Iscrizione e gruppi}
@@ -54,7 +56,7 @@ Il progetto deve obbligatoriamente soddisfare i seguenti vincoli:
  \item \textbf{compilare senza errori} sulla macchina virtuale fornita (sono tollerati, sebbene generalmente penalizzati, i \emph{warning} durante la compilazione)
  \item implementare una \textbf{gerarchia di classi} con almeno tre classi concrete per i progetti svolti singolarmente, o almeno cinque classi concrete per i progetti svolti in gruppo
  \item consentire la \textbf{creazione, la modifica e la cancellazione} degli oggetti della gerarchia
- \item implementare nativamente almeno un \textbf{contenitore per oggetti della gerarchia}, il quale dovrà esporre almeno un metodo per l'inserimento, uno per la lettura, uno per la cancellazione e uno per la ricerca in base a qualche criterio; a titolo esemplificativo e non esaustivo un contenitore può essere una lista singolarmente collegata, doppiamente collegata, una blockchain, un insieme o un albero
+ \item implementare nativamente almeno un \textbf{contenitore per oggetti della gerarchia}, il quale dovrà esporre almeno un metodo per l'inserimento, uno per la lettura, uno per la cancellazione e uno per la ricerca in base a qualche criterio; a titolo esemplificativo e non esaustivo un contenitore può essere una lista singolarmente collegata, doppiamente collegata, una blockchain, un insieme o un albero; tali metodi dovranno essere effettivamente utilizzati all'interno del programma, benché non sia necessario che ciò avvenga tramite la GUI (per es. inserimento nel contenitore durante la lettura da file); il contenitore deve essere utilizzato in almeno un punto del programma, ma è possibile utilizzare anche altre strutture dati, come \emph{std::vector}, in parti diverse del programma
  \item realizzare la \textbf{persistenza dei dati} in una qualsiasi forma per i progetti svolti singolarmente, o in un formato strutturato (JSON, XML, \ldots) per i progetti svolti in gruppo
  \item mantenere una \textbf{separazione netta} tra il modello logico e l'interfaccia grafica, ovvero il codice del modello deve poter essere riutilizzabile senza dipendere dall'interfaccia; nulla vieta che il codice del modello utilizzi strumenti di Qt non legati all'interfaccia, come le funzioni di I/O o le classi per la gestione di JSON
  \item realizzare i principi di \textbf{incapsulamento e \emph{information hiding}} della programmazione a oggetti: una classe deve astrarre un singolo concetto e includere tutti gli attributi e metodi di cui ha bisogno con opportuni livelli di visibilità
@@ -85,7 +87,7 @@ La consegna avverrà tramite il Moodle del corso, all'interno del quale saranno 
 \end{itemize}
 La cartella \emph{non dovrebbe} contenere codice oggetto compilato, eseguibili, file generati dall'IDE o in generale qualsiasi file non sia utile ai fini della valutazione. Si raccomanda di verificare il corretto caricamento dei file su Moodle e di comunicare tempestivamente eventuali malfunzionamenti.
 
-In caso di progetti di gruppo ogni studente dovrà provvedere alla consegna includendo il codice (lo stesso per tutti i membri del gruppo) e la propria relazione (diversa per ciascuno). Se nel gruppo solamente uno studente è sufficiente all'esame scritto, questo studente può comunque procedere alla consegna del progetto con l'obiettivo di finalizzare l'esame.  Si ricorda che la valutazione del progetto con relativo feedback avverrà solamente per gli studenti sufficienti all'esame scritto.
+In caso di progetti di gruppo ogni studente dovrà provvedere alla consegna includendo il codice (lo stesso per tutti i membri del gruppo) e la propria relazione (diversa per ciascuno). Se nel gruppo solamente uno studente è sufficiente all'esame scritto, questo studente può comunque procedere alla consegna del progetto con l'obiettivo di finalizzare l'esame. Si ricorda che la valutazione del progetto con relativo feedback avverrà solamente per gli studenti sufficienti all'esame scritto e che abbiano effettuato la consegna nella sessione in cui intendono registrare il voto.
 
 
 %-----------------------------------------------------------------------
@@ -108,9 +110,9 @@ La registrazione del voto finale è possibile solo dopo:
 \begin{itemize}
  \item avere superato con valutazione maggiore o uguale a 18 la prova scritta
  \item essersi iscritti alla lista Uniweb della per la registrazione del voto finale
- \item avere consegnato il progetto entro la scadenza prevista e aver ottenuto una valutazione positiva
+ \item avere consegnato il progetto entro la scadenza prevista per la sessione in cui si intende verbalizzare il voto e aver ottenuto una valutazione positiva
 \end{itemize}
-Il giorno della registrazione del voto verrà inviato all'email istituzionale dei soli studenti iscritti alla lista uniweb di registrazione del voto finale il feedback relativo alla valutazione del progetto e verrà comunicato il voto finale complessivo dell'esame. In caso di valutazione negativa del progetto, l'esame non sarà superato: sarà quindi necessaria la riconsegna del progetto per una successiva scadenza di consegna; in questo caso il voto dell'esame scritto rimane comunque valido. Lo studente che rifiuterà il voto finale proposto via uniweb dovrà riconsegnare il progetto per una successiva scadenza di consegna (tranne all'ultimo appello d'esame), cercando quindi di porre rimedio ai punti deboli segnalati nel feedback di valutazione e descrivendo obbligatoriamente le modifiche apportare al progetto nella relazione aggiornata; anche in questo caso il voto sufficiente dell'esame scritto rimane comunque valido.
+Il giorno della registrazione del voto verrà inviato all'email istituzionale dei soli studenti iscritti alla lista uniweb di registrazione del voto finale il feedback relativo alla valutazione del progetto e verrà comunicato il voto finale complessivo dell'esame. In caso di valutazione negativa del progetto, l'esame non sarà superato: sarà quindi necessaria la riconsegna del progetto per una successiva scadenza di consegna; in questo caso il voto dell'esame scritto rimane comunque valido. Lo studente che rifiuterà il voto finale proposto via uniweb dovrà riconsegnare il progetto per una successiva scadenza di consegna (tranne all'ultimo appello d'esame), cercando quindi di porre rimedio ai punti deboli segnalati nel feedback di valutazione e descrivendo obbligatoriamente le modifiche apportare al progetto nella relazione aggiornata; anche in questo caso il voto sufficiente dell'esame scritto rimane comunque valido. Il voto finale verrà calcolato come media pesata delle valutazioni ottenute nella prova scritta e nel progetto.
 
 %-----------------------------------------------------------------------
 \section{Note}
