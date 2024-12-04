@@ -37,11 +37,11 @@ L'obiettivo del progetto è sviluppare un sistema di gestione per una biblioteca
 
 Ogni tipo di media sarà rappresentato da una classe derivata da una classe base comune. Gli utenti dell'applicazione dovranno essere in grado di cercare, creare, visualizzare, modificare e cancellare i media, interagendo con i loro attributi specifici, come ad esempio l'autore, l'anno di pubblicazione, o il regista.
 
-Il progetto potrà essere sviluppato da un \textbf{singolo studente} oppure da una \textbf{coppia di studenti} e dovrà richiedere \textbf{approssimativamente 50 ore di lavoro} complessivo individuale.
+Il progetto potrà essere sviluppato da un \textbf{singolo studente} oppure da una \textbf{coppia di studenti} e dovrà richiedere \textbf{approssimativamente 40 ore di lavoro} complessivo individuale.
 
 La GUI potrà ispirarsi liberamente sia ad applicazioni desktop che a sistemi mobile. È possibile adottare pattern architetturali come il \emph{Model-View-Controller} o \emph{Model-View} per la progettazione della GUI. Il framework Qt offre una documentazione completa e dettagliata che sarà la principale guida di riferimento per lo sviluppo dell'interfaccia grafica. Si incoraggia anche l'applicazione di design pattern comunemente utilizzati in C++ per migliorare la manutenibilità e l'estensibilità del progetto.
 
-Il voto del progetto e quello dell'esame scritto saranno calcolati separatamente ed entrambi concorreranno al voto finale dell'esame. In linea generale, il voto dell'esame scritto avrà un peso maggiore, ma il voto del progetto potrà influire positivamente sul risultato finale. Gli studenti avranno la possibilità di ripresentare il progetto mantenendo il voto dell'esame scritto, e viceversa. Tuttavia, la valutazione del progetto sarà effettuata solo per gli studenti che abbiano superato l'esame scritto e si siano iscritti correttamente nella lista Uniweb per la registrazione del voto finale.
+La valutazione del progetto e il voto dell'esame scritto saranno calcolati separatamente ed entrambi concorreranno al voto finale dell'esame. In linea generale, il voto dell'esame scritto avrà un peso maggiore, ma la valutazione del progetto potrà influire positivamente o negativamente sul risultato finale. Gli studenti avranno la possibilità di ripresentare il progetto mantenendo il voto dell'esame scritto, e viceversa. Tuttavia, la valutazione del progetto sarà effettuata solo per gli studenti che abbiano superato l'esame scritto e si siano iscritti correttamente nella lista Uniweb per la registrazione del voto finale.
 
 
 
@@ -68,7 +68,7 @@ Il progetto deve obbligatoriamente soddisfare i seguenti vincoli:
   \item nome, cognome e numero di matricola di tutti i componenti del gruppo (o del singolo autore)
   \item una breve introduzione che descriva il contesto del progetto
   \item la descrizione delle classi principali del modello logico
-  \item la descrizione dell'utilizzo non banale del polimorfismo, identificando quali metodi sono polimorfi (in manier "non banale") e qual'è il loro valore aggiunto all'interno del progetto
+  \item la descrizione dell'utilizzo non banale del polimorfismo, identificando quali metodi sono polimorfi (in maniera "non banale") e qual è il loro valore aggiunto all'interno del progetto
   \item la descrizione del metodo di persistenza dei dati
   \item la descrizione delle funzionalità aggiuntive implementate
   \item la rendicontazione delle ore previste e di quelle effettivamente svolte
@@ -82,7 +82,7 @@ La Fig.~\ref{fig:skeleton} mostra un esempio di struttura dell'interfaccia grafi
 
 \begin{figure}[t]
 	\includegraphics[width=0.95\textwidth]{assets/gui-skeleton-sample}
-	\caption{Esempio di scheletro dell'interfaccia della finestra principale}\label{fig:skeleton}
+	\caption{Esempio di scheletro di una possibile interfaccia della finestra principale}\label{fig:skeleton}
 \end{figure}
 
 %-----------------------------------------------------------------------
@@ -107,16 +107,26 @@ Una funzionalità viene valutata positivamente in base alla sua pertinenza al te
 
 Poiché il corso non tratta di usabilità o resa estetica della GUI la loro mancanza \textbf{non verrà penalizzata}, purché questo non pregiudichi il corretto funzionamento del programma. Tuttavia, se il progetto viene sviluppato ponendo particolare attenzione a queste caratteristiche, verrà riconosciuto un bonus come se si trattasse di una funzionalità aggiuntiva.
 
+La valutazione terrà conto dello \textbf{storico delle valutazioni}, e vedrà una progressiva riduzione all'aumentare del numero di consegne.
+
 La qualità della relazione, pur avendo un'incidenza minore, verrà valutata sulla base della completezza, della chiarezza e della coesione. \textbf{Errori linguistici evidenti} come sistematica mancanza di punteggiatura o errori di battitura frequenti \textbf{verranno penalizzati}. È possibile redigere la relazione in Italiano o Inglese, a propria discrezione. La scelta della lingua non avrà effetti sulla valutazione.
 
-Ciascuna finestra di consegna presente nella pagina Moodle del corso mostrerà una data di scadenza e una data limite: sarà possibile \textbf{consegnare un progetto oltre la data di scadenza} e prima della data limite, sebbene questo comporterà una \textbf{penalità importante}.
+Ciascuna finestra di consegna presente nella pagina Moodle del corso mostrerà una data limite: \textbf{non sarà in alcun modo possibile consegnare oltre tale data o con modalità diverse da quelle previste}.
 
 La valutazione del progetto è \textbf{valida per l'intero anno accademico} e fino a che non viene (ri)consegnato un progetto.
 
-La valutazione è accompagnata da un \emph{feedback} testuale che motiva la valutazione ed evidenzia i punti di forza e debolezza del progetto. È possibile riconsegnare un progetto per ottenere una nuova valutazione, che potrebbe anche essere peggiorativa, tuttavia se si seguono le indicazioni fornite dal \emph{feedback} sarà generalmente migliorativa. La valutazione è \emph{idempotente}: riconsegnare lo stesso progetto senza modifiche produrrà esattamente lo stesso voto.
+La valutazione è accompagnata da un \emph{feedback} testuale che motiva la valutazione ed evidenzia i punti di forza e debolezza del progetto. È possibile riconsegnare un progetto per ottenere una nuova valutazione, che potrebbe anche essere peggiorativa, tuttavia se si seguono le indicazioni fornite dal \emph{feedback} sarà generalmente migliorativa. La valutazione è \emph{idempotente}: riconsegnare lo stesso progetto senza modifiche produrrà esattamente la stessa valutazione. Se un progetto viene riconsegnato senza la sezione riportante le modifiche rispetto alla consegna precedente nella relazione, questo non verrà valutato nuovamente e riceverà automaticamente la stessa valutazione della consegna precedente.
 
 Consegnare un progetto svolto anche parzialmente da altri (con o senza il loro consenso) oppure generato da sistemi automatici comporta automaticamente l'insufficienza.
 
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=0.95\linewidth]{assets/evaluation-criteria}
+ \caption{Schema di valutazione indicativo}
+ \label{fig:evaluation}
+\end{figure}
+
+\iffalse
 \begin{table}[ht]
  \caption{Griglia di valutazione indicativa}
  \begin{tabularx}{\linewidth}{r X r}
@@ -155,15 +165,13 @@ Consegnare un progetto svolto anche parzialmente da altri (con o senza il loro c
   
   \midrule
   Relazione & Errori linguistici evidenti e sistematici & -1 \\
-  
-  \midrule
-  Consegna & Consegna oltre la data di scadenza (entro la data limite)& -9 \\
   \bottomrule
  \end{tabularx}
 \label{tab:evaluation}
 \end{table}
+\fi
 
-La Tab. \ref{tab:evaluation} presenta la griglia di valutazione del progetto, da considerarsi indicativa e utile come guida nello sviluppo. Poiché la valutazione dipende dalle funzionalità scelte dagli studenti, la griglia serve principalmente come riferimento orientativo.
+La Fig. \ref{fig:evaluation} presenta la distribuzione dei pesi assegnati alle diverse caratteristiche del progetto, da considerarsi indicativa e utile come guida nello sviluppo. Poiché la valutazione dipende dalle funzionalità scelte dagli studenti, la griglia serve principalmente come riferimento orientativo.
 
 \section{Verbalizzazione del voto}
 La registrazione del voto finale è possibile solo dopo:
@@ -174,7 +182,7 @@ La registrazione del voto finale è possibile solo dopo:
 \end{itemize}
 Si ricorda che le liste Uniweb verificato il soddisfacimento delle propedeuticità e hanno una data di chiusura anticipata di almeno 5 giorni. Non saranno ammesse iscrizioni manuali in ritardo, per nessun motivo.
 
-Il giorno della registrazione del voto finale previsto dalla corrispondente lista Uniweb verrà inviato all'email istituzionale dei soli studenti iscritti alla lista Uniweb il \emph{feedback} relativo alla valutazione del progetto e verrà registrato su Uniweb il voto finale complessivo dell'esame. In caso di valutazione negativa del progetto l'esame non sarà superato: sarà quindi necessaria la riconsegna del progetto per una successiva scadenza di consegna all'interno dello stesso anno accademico; in questo caso il voto dell'esame scritto rimane comunque valido. Lo studente che rifiuterà il voto finale proposto via Uniweb dovrà riconsegnare il progetto per una successiva scadenza di consegna nello stesso anno accademico (tranne all'ultimo appello d'esame, per cui ovviamente non esiste una successiva scadenza di consegna), cercando quindi di porre rimedio ai punti deboli segnalati nel \emph{feedback} di valutazione e descrivendo obbligatoriamente le modifiche apportate al progetto nella relazione aggiornata; anche in questo caso il voto sufficiente dell'esame scritto rimane comunque valido. 
+La valutazione dei progetti sarà completata generalmente entro 15 giorni dalla consegna, in base al numero di progetti da esaminare. Una volta pronta, la valutazione finale, comprensiva del voto della prova scritta e del progetto, sarà caricata su Uniweb, mentre il \emph{feedback} relativo al progetto verrà inviato tramite Moodle esclusivamente agli utenti iscritti alla lista Uniweb. In caso di valutazione negativa del progetto l'esame non sarà superato: sarà quindi necessaria la riconsegna del progetto per una successiva scadenza di consegna all'interno dello stesso anno accademico; in questo caso il voto dell'esame scritto rimane comunque valido. Lo studente che rifiuterà il voto finale proposto via Uniweb dovrà riconsegnare il progetto per una successiva scadenza di consegna nello stesso anno accademico (tranne all'ultimo appello d'esame, per cui ovviamente non esiste una successiva scadenza di consegna), cercando quindi di porre rimedio ai punti deboli segnalati nel \emph{feedback} di valutazione e descrivendo obbligatoriamente le modifiche apportate al progetto nella relazione aggiornata; anche in questo caso il voto sufficiente dell'esame scritto rimane comunque valido. 
 
 
 
